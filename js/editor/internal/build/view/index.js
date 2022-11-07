@@ -1,0 +1,22 @@
+export { EditorView } from "./editorview.js";
+export { ViewPlugin, ViewUpdate, logException } from "./extension.js";
+export { Decoration, WidgetType, BlockType } from "./decoration.js";
+export { BlockInfo } from "./heightmap.js";
+export { BidiSpan, Direction } from "./bidi.js";
+export { keymap, runScopeHandlers } from "./keymap.js";
+export { drawSelection } from "./draw-selection.js";
+export { dropCursor } from "./dropcursor.js";
+export { highlightSpecialChars } from "./special-chars.js";
+export { scrollPastEnd } from "./scrollpastend.js";
+export { highlightActiveLine } from "./active-line.js";
+export { placeholder } from "./placeholder.js";
+export { MatchDecorator } from "./matchdecorator.js";
+export { rectangularSelection, crosshairCursor } from "./rectangular-selection.js";
+export { showTooltip, tooltips, getTooltip, hoverTooltip, hasHoverTooltips, closeHoverTooltips, repositionTooltips } from "./tooltip.js";
+export { showPanel, getPanel, panels } from "./panel.js";
+export { lineNumbers, highlightActiveLineGutter, gutter, gutters, GutterMarker, gutterLineClass, lineNumberMarkers } from "./gutter.js";
+import { HeightMap, HeightOracle, MeasuredHeights, QueryType } from "./heightmap.js";
+import { ChangedRange } from "./extension.js";
+import { computeOrder, moveVisually } from "./bidi.js";
+// @internal
+export const __test = { HeightMap, HeightOracle, MeasuredHeights, QueryType, ChangedRange, computeOrder, moveVisually };

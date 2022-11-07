@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Editor</title>
+    <script async type="module">
+        import { editorFeature } from "./js/editor";
+
+        const base =
+            'precision highp float;\n' +
+            'attribute vec3 position;\n' +
+            'attribute vec2 uv;\n' +
+            'void main(void) {\n' +
+            '  \n' +
+            '}';
+
+        editorFeature();
+    </script>
+    <style>
+        body { background: lightblue; }
+        .action-holder button { width: 12rem; height: 4rem; }
+    </style>
+</head>
+<body>
+</body>
+</html>

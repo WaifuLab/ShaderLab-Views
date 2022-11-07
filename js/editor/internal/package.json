@@ -1,0 +1,12 @@
+{
+    "name": "editor",
+    "version": "0.0.0",
+    "type": "module",
+    "devDependencies": {
+        "typescript": "latest"
+    },
+    "scripts": {
+        "compile": "tsc --project tsconfig.json",
+        "build": "npm run compile && set FILTER_PATH=build && node bin/suffix.js"
+    }
+}

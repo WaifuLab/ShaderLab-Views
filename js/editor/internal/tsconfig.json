@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "lib": ["esnext", "dom"],
+        "declaration": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "useDefineForClassFields": false,
+        "target": "esnext",
+        "module": "esnext",
+        "baseUrl": ".",
+        "paths": {
+            "lezer/common": ["lezer/common/index.ts"],
+            "lezer/highlight": ["lezer/highlight/index.ts"],
+            "lezer/lr": ["lezer/lr/index.ts"],
+            "state": ["state/index.ts"],
+            "view": ["view/index.ts"],
+            "commands": ["commands/index.ts"],
+            "language": ["language/index.ts"],
+            "search": ["search/index.ts"],
+            "lint": ["lint/index.ts"],
+            "autocomplete": ["autocomplete/index.ts"]
+        },
+        "outDir": "build"
+    },
+    "exclude": [
+        "/*.js",
+        "bin/**/*",
+        "lsp/**/*",
+        "node_modules"
+    ]
+}

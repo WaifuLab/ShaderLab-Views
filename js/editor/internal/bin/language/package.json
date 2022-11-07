@@ -1,0 +1,27 @@
+{
+    "name": "language-workspace",
+    "version": "0.0.0",
+    "type": "module",
+    "dependencies": {
+        "autocomplete": "file:../../build/autocomplete",
+        "language": "file:../../build/language",
+        "lint": "file:../../build/lint",
+        "state": "file:../../build/state",
+        "view": "file:../../build/view",
+        "lezer-common": "file:../../build/lezer/common",
+        "lezer-highlight": "file:../../build/lezer/highlight",
+        "lezer-lr": "file:../../build/lezer/lr",
+        "lezer-lang-javascript": "file:../lezer/lang/javascript",
+        "lezer-lang-wgsl": "file:../lezer/lang/wgsl"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "latest",
+        "@rollup/plugin-typescript": "latest",
+        "rollup": "latest",
+        "tslib": "latest"
+    },
+    "scripts": {
+        "wgsl-compile": "rollup wgsl -c",
+        "js-compile": "rollup javascript -c"
+    }
+}
