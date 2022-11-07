@@ -1,0 +1,11 @@
+export { EditorState } from "./state.js";
+export { Facet, StateField, Prec, Compartment } from "./facet.js";
+export { EditorSelection, SelectionRange } from "./selection.js";
+export { Transaction, Annotation, AnnotationType, StateEffect, StateEffectType } from "./transaction.js";
+export { combineConfig } from "./config.js";
+export { ChangeSet, ChangeDesc, MapMode } from "./change.js";
+export { CharCategory } from "./charcategory.js";
+export { RangeValue, Range, RangeSet, RangeSetBuilder } from "./rangeset.js";
+export { findClusterBreak, codePointAt, fromCodePoint, codePointSize } from "./char.js";
+export { countColumn, findColumn } from "./column.js";
+export { Line, Text } from "./text.js";

@@ -1,0 +1,23 @@
+{
+    "name": "lezer-workspace",
+    "version": "0.0.0",
+    "type": "module",
+    "dependencies": {
+        "lezer-common": "file:../../build/lezer/common",
+        "lezer-highlight": "file:../../build/lezer/highlight",
+        "lezer-lr": "file:../../build/lezer/lr",
+        "lezer-generator": "file:generator",
+        "lezer-translator": "file:translator",
+        "regexp-parser-literal": "latest"
+    },
+    "scripts": {
+        "wgsl-generate": "generator lang/wgsl/wgsl.grammar -o lang/wgsl/parser",
+        "js-generate": "generator lang/javascript/javascript.grammar -o lang/javascript/parser",
+        "wgsl-translate": "translator -o lang/wgsl/wgsl.gen.grammar trees-wgsl.json",
+        "js-translate": "translator -o lang/javascript/javascript.gen.grammar trees-javascript.json"
+    },
+    "bin": {
+        "generator": "lezer-generator/cli.js",
+        "translate": "lezer-translator/cli.js"
+    }
+}
