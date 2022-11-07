@@ -1,0 +1,9 @@
+# share
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+
+# Generate output file
+dist/

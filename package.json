@@ -1,0 +1,20 @@
+{
+    "name": "shaderlab-views",
+    "version": "1.0.0",
+    "devDependencies": {
+        "favicons": "latest",
+        "webpack": "latest",
+        "webpack-cli": "latest",
+        "css-loader": "latest",
+        "copy-webpack-plugin": "latest",
+        "html-webpack-plugin": "latest",
+        "terser-webpack-plugin": "latest",
+        "mini-css-extract-plugin": "latest",
+        "css-minimizer-webpack-plugin": "latest",
+        "html-inline-script-webpack-plugin": "latest"
+    },
+    "scripts": {
+        "build:dev": "webpack --env NODE_ENV=development --config webpack.config.js && node bin/copy.js",
+        "build:prod": "webpack --env NODE_ENV=production --config webpack.config.js && node bin/copy.js"
+    }
+}
